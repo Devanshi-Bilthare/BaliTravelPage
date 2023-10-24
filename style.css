@@ -1,0 +1,348 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    background-color:#0C1813;
+    padding: 5vw;
+    color: #FEFEFF;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.page1{
+    width: 90vw;
+    height: 90vh;
+    background-image: url(https://media.istockphoto.com/id/1083197056/photo/beautiful-girl-resting-on-the-beach.jpg?s=612x612&w=0&k=20&c=FULU3SP5eSiOC0P9V62gHa4ak0uhJsGJrhUy49PEyqw=);
+}
+
+.overlay{
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    background: linear-gradient(#122018,transparent,transparent,#122018);
+    text-align: center;
+}
+
+.overlay nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+    /* text-align: center; */
+}
+
+.overlay ul{
+    display: flex;
+}
+
+.overlay li{
+    list-style: none;
+    margin-left: 3vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8vw;
+    letter-spacing: 1px;
+
+}
+
+nav h2{
+    font-size:1.5vmax ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    line-height: 1.5vmax;
+}
+
+.overlay p{
+    font-size: 1.5vmax;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 25vh;
+}
+
+.overlay h1{
+    font-family: 'Domine', serif;
+    text-transform: uppercase;
+    font-size: 6vmax;
+    letter-spacing: 10px;
+}
+
+.overlay button{
+    background-color: transparent;
+    border: none;
+    color: #FEFEFF;
+    font-size: 1vmax;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10vh;
+}
+
+.page2{
+    width: 90vw;
+    background-color: #122018;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+
+.page2> p,.page3>p{
+    font-size: 1.7vmax;
+    color: rgb(169,141,67);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: -3vh;
+}
+
+.page2 h1,.page3 h1{
+    margin-top: 4vh;
+    font-family: 'Domine', serif;
+    text-transform: uppercase;
+    font-size: 4vmax;
+    letter-spacing: 10px;
+    line-height:4vmax ;
+}
+
+.divide{
+    display: flex;
+}
+.left-page2{
+    width: 50%;
+}
+
+.left-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img1,.img6{
+    margin-top: 10vw;
+    width: 20vw;
+    height: 20vw;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1601225612316-b4733315a717?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGh1a2V0fGVufDB8fDB8fHww);
+    transform: rotate(45deg);
+    transform-origin: top right;
+    position: relative;
+}
+
+.img2box,.img7box{
+    width: 12vw;
+    height: 12vw;
+    background-color:#122018 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:15vw;
+    top:4vw;
+}
+.img2,.img7{
+    width: 10vw;
+    height: 10vw;
+    /* background-color: yellow; */
+    background-image: url(https://images.unsplash.com/photo-1586968425481-3285b99f3b44?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBodWtldHxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+.img-rot{
+    transform: rotate(45deg);
+}
+
+.img3{
+    width: 10vw;
+    height: 10vw;
+    background-image: url(https://plus.unsplash.com/premium_photo-1670002520268-114a99be2075?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBodWtldHxlbnwwfHwwfHx8MA%3D%3D);
+    /* transform-origin: top right; */
+    margin:-8vw 0vw 0 0;
+}
+
+.left-page2 p,.right-page2 p{
+    width: 20vw;
+    font-size: .9vmax;
+    text-align: left;
+    margin-left:25vw;
+    margin-bottom: 1.5vw;
+    color: #56615C;
+    /* letter-spacing: 1px; */
+}
+
+.margin-para{
+margin-top: -8vw;
+}
+
+.img4{
+    width: 7vw;
+    height: 7vw;
+    margin:4vw 0 0 32vw;
+    /* background-color: yellow; */
+    background-image: url(https://images.unsplash.com/photo-1585977411904-049f086f89bb?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D);
+}
+
+.right-page2{
+    width: 50%;
+    border-left: 2px solid rgb(169,141,67);
+    display: flex;
+}
+
+.right-page2 p{
+    margin: 4vw 0 0 2vw;
+}
+
+.img5{
+    width: 8vw;
+    height: 8vw;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1494588024300-e9df7ff98d78?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D);
+    margin:8vw 0 10vw 7vw ;
+}
+
+.img6{
+    transform: rotate(45deg);
+    transform-origin: inherit;
+    margin-left: 2vw;
+    background-image: url(https://images.unsplash.com/photo-1552464717-70ffd59710bf?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBodWtldHxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+.img7box{
+    left:4vw;
+    top:15vw;
+}
+
+.img7{
+    background-image: url(https://images.unsplash.com/photo-1529686342540-1b43aec0df75?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D);
+}
+
+.page3{
+    width: 90vw;
+    background-color: #122018;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.page3 button{
+    padding: .9vw 4.5vw;
+    background-color: transparent;
+    border: 2px solid rgb(169,141,67);
+    color: rgb(169,141,67);
+    font-size: 1vmax;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin: 3vh 0 6vh 0;
+    box-shadow: 2px 2px 30px 10px  rgba(169, 142, 67, 0.205);
+    text-shadow: 5px 5px 40px  rgb(169,141,67);
+    transition:1s all linear ;
+}
+
+
+.page3 button:hover{
+    background-color: rgba(169, 142, 67, 0.208);
+}
+
+.page3-content{
+    display: flex;
+    margin-top: 5vw;
+}
+
+.page3img{
+    width: 65%;
+    height: 75vh ;
+    /* margin-top: 5vw; */
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 1.3vmax;
+    padding:55vh 4vw 0 0;
+    letter-spacing: 1px;
+    /* background-color: red; */
+    background-image: url(https://plus.unsplash.com/premium_photo-1673288455625-fa00f5ff831f?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8);
+}
+
+.page3img span{
+   margin-left: 3vw;
+}
+
+.page3img i{
+    margin-right: 1vw;
+}
+.page3-cards{
+    width: 35%;
+}
+
+.card{
+    /* margin-top: 1vw; */
+    /* background-color: rgb(169,141,67); */
+    padding: 3vh 1vw;
+    width: 120%;
+    text-align: start;
+    transform: translate(-16.5%);
+}
+
+.card span{
+    font-size: 1vmax;
+    margin-right: 5vw;
+}
+
+.card h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9vmax;
+    letter-spacing: 1px;
+}
+
+.card p{
+    font-size: .7vmax;
+    text-transform: capitalize;
+    margin-left: 10vw;
+    color: #56615C;
+}
+
+.card h4{
+    margin:1vh 0 0 10vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .7vmax;
+    letter-spacing: 1px;
+}
+
+.card i{
+    color: rgb(169,141,67);
+    margin-right: 3vw;
+    font-stretch: ultra-expanded;
+}
+
+.col-card{
+    background-color: rgb(169,141,67);
+}
+
+.page4{
+    width: 90vw;
+    height: 90vh;
+    background-image: url(https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D);
+}
+
+.overlay2{
+    background-color: #12201888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(#122018,#122018ae,transparent,transparent,#122018); */
+}
